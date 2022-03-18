@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "125836586401",
+    "project_id": "invisible-924",
+    "storage_bucket": "invisible-924.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125836586401:android:aae91f42ee1a8284876fe0",
+        "android_client_info": {
+          "package_name": "com.example.invisible"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125836586401-fsirpspnoaaasa8fi2pm8jeqmitv1pj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfmKx34JXGr9T5g6M1DH68JHvpgU9CgpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125836586401-fsirpspnoaaasa8fi2pm8jeqmitv1pj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendFragment">
+    <TextView
+        android:id="@+id/send_Logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ink_free"
+        android:gravity="start"
+        android:paddingLeft="16dp"
+        android:text="Invisible"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/send_EmailEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/rounded_corner_edit_text"
+        android:hint="Enter user email"
+        android:textSize="25dp"
+        android:textColorHint="@color/Gray"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ink_free"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_Logo" />
+
+
+    <EditText
+        android:id="@+id/send_MessageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_min="300dp"
+        android:background="@drawable/rounded_corner_edit_text"
+        android:ems="10"
+        android:fontFamily="@font/ink_free"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Gray"
+        android:layout_margin="20dp"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/send_EmailEditText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/send_EmailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/send_SendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:fontFamily="@font/ink_free"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_MessageEditText"
+        android:onClick="SendAMessage"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ink_free"
+        android:layout_marginTop="15dp"
+        android:text="Enter the message"
+        android:padding="20dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_EmailEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
